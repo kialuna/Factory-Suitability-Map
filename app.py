@@ -77,6 +77,8 @@ class arrayMap:
         array : Python array
 
         """
+        # CITATION: Code for this function was reused from assignment 1. 
+        
         reader = csv.reader(open(file, newline=''),
                             quoting=csv.QUOTE_NONNUMERIC)
         array = []
