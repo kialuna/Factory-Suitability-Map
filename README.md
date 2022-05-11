@@ -27,3 +27,6 @@ Many of the functions created build on other attributes within the classes and t
 - [Matplotlib documentation](https://matplotlib.org/stable/tutorials/index.html)
 - [Embedding Matplotlib in Tkinter](https://matplotlib.org/3.1.0/gallery/user_interfaces/embedding_in_tk_sgskip.html)
 
+
+[MIT License](LICENSE)
+
