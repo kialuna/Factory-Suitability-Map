@@ -8,7 +8,7 @@ The values of these ranged between 0-255, and 255 was intended to be most suitab
 The code is split into two classes. The first is named arrayMap(), and includes the importing, reversing polarity, weighting, overlaying and masking of the contributing maps. It heavily utilises the Numpy library to perform array arithmetic. This class is imported and utilised in the second defined class, GUI(), where the Matplotlib and Tkinter libraries are used to produce a user interface which displays the arrays produced by arrayMap() with widgets to allow the user to control the relative weights of the three factors, toggle the top 10% area on and off, and save the suitability map for the whole of the U.K as a CSV. 
 
 ## Code 
-To run the code download [app.py](app.py), open in Spyder and run. The Tkinter window should open and look like: 
+To run the code download [app.py](app.py) as well as the three contributing maps ([geology](geology.txt), [population](population.txt), and [transport](transport.txt)), open in Spyder and run. The Tkinter window should open and look like: 
 
 
 <br><img src="snapshot.JPG" alt="drawing" width="500"/>
