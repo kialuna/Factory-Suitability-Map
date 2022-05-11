@@ -18,7 +18,9 @@ import tkinter as tk
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from matplotlib.colors import LinearSegmentedColormap
+import time
 
+start3=time.time()
 
 class arrayMap:
     """
@@ -40,6 +42,8 @@ class arrayMap:
 
 
         """
+        start1=time.time()
+        
         # Import geology map 
         self.geology = self.import_csv('geology.txt')
         
@@ -63,6 +67,9 @@ class arrayMap:
         
         # Create masked map of top 10% of U.K
         self.top10 = self.top10func(self.overlayMap)
+        
+        end1=time.time()
+        print('Time to initialise arrayMap():',end1-start1)
 
     def import_csv(self, file):
         """
@@ -258,6 +265,7 @@ class arrayMap:
 #               '\n Cut-off value:',limit,
 #               '\n Minimum value of masked area:',top10.min())
 # =============================================================================
+
         return top10
 
 
@@ -278,6 +286,7 @@ class GUI:
 
 
         """
+        start2=time.time()
 
         window.title("Factory Location Suitability Map")                    
         
@@ -361,6 +370,9 @@ class GUI:
         self.buttonSave = tk.Button(
             self.options_frame, text="Save", command=self.write)
         self.buttonSave.pack(pady=20)
+        
+        end2=time.time()
+        print('Time to initialise GUI():',end2-start2)
 
     def update(self, value):
         """
@@ -446,4 +458,8 @@ window = tk.Tk()
 # initiate GUI class using window and arrayMap() class
 gui = GUI(window, arrayMap())
 # Run application
+
+end3=time.time()
+print('Time to create tk window and instantiate GUI:',end3-start3)
+
 window.mainloop()
