@@ -17,7 +17,7 @@ The PyDoc documentation can be found by downloading [app.html](app.html) and ope
 
 ## Testing
 
-The majority of the testing has been done within the source code and has been commented out. The tests consist of outputting results to the console and checking their validity. These tests can be commented out and will print results to the console when the code is run.  
+All tests found that the code runs as intended and all features appear to be fully functional. The majority of the testing has been done within the source code and has been commented out. The tests consist of outputting results to the console and checking their validity. These tests can be commented out and will print results to the console when the code is run.  
 Many of the functions created build on other attributes within the classes and thus cannot be simply validated using Doctests. One doctest has been carried out on the 'scaling' function within the arrayMap() class, which passes. 
 
 ## Sources 
