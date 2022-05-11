@@ -13,10 +13,17 @@ To run the code download [app.py](app.py), open in Spyder and run. The Tkinter w
 
 <br><img src="snapshot.JPG" alt="drawing" width="500"/>
 
-The PyDoc documentation can be found in [app.html](app.html).
+The PyDoc documentation can be found by downloading [app.html](app.html) and opening in your browser.
 
 ## Testing
 
 The majority of the testing has been done within the source code and has been commented out. The tests consist of outputting results to the console and checking their validity. These tests can be commented out and will print results to the console when the code is run.  
 Many of the functions created build on other attributes within the classes and thus cannot be simply validated using Doctests. One doctest has been carried out on the 'scaling' function within the arrayMap() class, which passes. 
+
+## Sources 
+
+- [Tkinter documentation](https://tkdocs.com/)
+- [Numpy documentation](https://www.google.com/search?q=numpy+documentation&rlz=1C1CHBF_en-GBGB858GB858&oq=numpy+docu&aqs=chrome.0.0i512l2j69i57j0i512l4j69i60.2665j0j4&sourceid=chrome&ie=UTF-8)
+- [Matplotlib documentation](https://matplotlib.org/stable/tutorials/index.html)
+- [Embedding Matplotlib in Tkinter](https://matplotlib.org/3.1.0/gallery/user_interfaces/embedding_in_tk_sgskip.html)
 
